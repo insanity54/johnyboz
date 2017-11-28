@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="rando-color" hidden="false" id="2" name="_randocolor" order="1"/>
+        <blocks>
+            <receiver blockID="6" id="1"/>
+        </blocks>
+        <events>
+            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
+            <event displayName="Click" enabled="true" id="2" name="event-mouse-press-release" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="0" attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_0" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="2" attachedevent="true" class="scripts.ActorEvents_2" classname="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_2" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_3_3_BackgroundMusic" classname="scripts.Design_3_3_BackgroundMusic" desc="Loop music when the scene is loaded." description="Loop music when the scene is loaded." design="true" drawOrder="0" id="3" name="Background Music" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0.0" defaultValue="0.0" desc="The channel at which to play the music. Must be between 0 and 31 inclusive." dropdown="" fullname="Channel" hidden="false" id="1" name="_Channel" order="1"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the sound on the selected channel will be stopped before the music starts." dropdown="" fullname="Stop Channel First" hidden="false" id="2" name="_StopChannelFirst" order="2"/>
+        <sound default="" defaultValue="" desc="The background music to play." dropdown="" fullname="Music to Play" hidden="false" id="3" name="_MusictoPlay" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="7" attachedevent="true" class="scripts.ActorEvents_7" classname="scripts.ActorEvents_7" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="4" name="ActorEvents_7" oid="-1" package="scripts." shared="false" type="actor">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="randoplex" hidden="false" id="1" name="_randoplex" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_5_5_FadeAfterTime" classname="scripts.Design_5_5_FadeAfterTime" desc="Attach this behaviour to an actor to have it fade out after the specified time and over a specified duration" description="Attach this behaviour to an actor to have it fade out after the specified time and over a specified duration" design="true" drawOrder="0" id="5" name="Fade After Time" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="1" defaultValue="1" desc="The amount of time, in seconds, over which to fade out." dropdown="" fullname="Fade Time" hidden="false" id="1" name="_FadeTime" order="3"/>
+        <number default="1" defaultValue="1" desc="The amount of time, in seconds after which the actor should start fading." dropdown="" fullname="Time to Fade After" hidden="false" id="3" name="_TimetoFadeAfter" order="2"/>
+        <boolean default="false" defaultValue="false" desc="An INTERNAL attribute to determine whether or not the actor is already fading." dropdown="" fullname="Fading" hidden="true" id="5" name="_Fading" order="1"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the actor is killed after fading out." dropdown="" fullname="Kill After Fade" hidden="false" id="6" name="_KillAfterFade" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Fade" enabled="true" id="1" name="event-custom" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+</pack>
